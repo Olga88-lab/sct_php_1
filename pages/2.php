@@ -25,7 +25,7 @@ $pages2 = '2.php';
 <p><img src="<?= $img5 ?>"
          width="280" height="189" alt=""></p>
 <ul>
-    <li><a href="<?= $index ?>">Перейти на главную страницу</a></br></li>
+    <li><a href="<?= $index ?>">Перейти на главную страницу</a><br></li>
     <li><a href="<?= $pages1 ?>">Перейти на 1-ю страницу</a><br></li>
     <li><a href="<?= $pages2 ?>">Перейти на 2-ю страницу</a></li>
 </ul>
