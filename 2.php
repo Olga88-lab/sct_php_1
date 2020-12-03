@@ -1,7 +1,7 @@
 <html>
 <body>
 <?php
-    function getResult ($a = 32, $b = 8, $d = 'Произведение')
+    function getResult ($d = 'Произведение', $a = 32, $b = 8)
 {
     if ($d == 'Сумма') {
         echo  $getResult = $a + $b;
