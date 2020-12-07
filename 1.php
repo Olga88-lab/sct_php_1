@@ -25,13 +25,13 @@ function letText ($name, $age = "", $address = "")
         }
         echo  "$name $age $text $address";
     }
-    elseif ($age == '') {
+    elseif ($age === '') {
     return "$name $address";
     }
-    elseif ($name == '') {
+    elseif ($name === '') {
     return "$age $address";
     }
-    elseif ($address == '') {
+    elseif ($address === '') {
     return "$name $age";
     }
 }

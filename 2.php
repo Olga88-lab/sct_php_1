@@ -12,7 +12,7 @@ function result($a, $b, $c = "")
     if ($a !=='' && $a !== null and $a <= $b and $a <= $c ) {
         return (int) $a;
     }
-    if ($a == '' or $a == null) {
+    if ($a === '' or $a === null) {
         if ($b <= $c) {
             return (int) $b;
         }
@@ -23,7 +23,7 @@ function result($a, $b, $c = "")
     elseif ($b !== '' && $b !== null and $b < $a and $b <= $c ) {
         return (int) $b;
     }
-    if ($b == '' or $b == null) {
+    if ($b === '' or $b === null) {
         {
             if ($a <= $c) {
                 return (int) $a;
@@ -36,7 +36,7 @@ function result($a, $b, $c = "")
     elseif ($c !== '' && $c !== null and $c < $a and $c < $b) {
         return (int) $c;
     }
-    if ($c == '' or $c == null) {
+    if ($c === '' or $c === null) {
         {
             if ($b <= $a) {
                 return (int) $b;
@@ -50,4 +50,4 @@ function result($a, $b, $c = "")
 echo result(10,26, -1);
 ?>
 </body>
-</html></html>
+</html>
