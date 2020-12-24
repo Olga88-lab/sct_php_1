@@ -13,10 +13,10 @@ function page(){
     return $page;
     }
     function replaceTitle($html, $newTitle){
-    return str_replace("{{TITLE}}", $newTitle, $html);
+        return str_replace("{{TITLE}}", $newTitle, $html);
     }
     function replaceContent($html, $newContent){
-    return str_replace("{{CONTENT}}", $newContent, $html);
+        return str_replace("{{CONTENT}}", $newContent, $html);
     }
     function getReplace($page, $element, $replacement)
     {
@@ -35,7 +35,7 @@ function page(){
 $page = page();
 $page = getReplace($page, "title", "this is new title");
 $page = getReplace($page, "content", "this is new content");
-echo $page;
+    echo $page;
 ?>
 </body>
 </html>

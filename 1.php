@@ -1,8 +1,11 @@
 <html>
 <body>
 <?php
-    $date = "2020-01-28";
-    echo date ( "d.m.y", strtotime ( $date ));
+    function data ($date = "2020-01-28")
+    {
+        return date("d.m.y", strtotime($date));
+    }
+    data ();
 ?>
 </body>
 </html>
