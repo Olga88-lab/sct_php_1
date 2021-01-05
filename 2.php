@@ -6,9 +6,8 @@
     return mb_strtoupper(mb_substr($string, 0, 1, $enc), $enc).
         mb_substr($string, 1, mb_strlen($string, $enc), $enc);
     }
-    function name ()
+    function name ($str)
     {
-        $str = "ПРИВетСТВУю, дАМЫ И ГОСПоДа!";
         $str = mb_ucfirst(mb_strtolower($str));
         $a = array(" " => "_");
         if ($str[strlen($str) - 1] == '.' or $str[strlen($str) - 1] == '!'
@@ -19,7 +18,7 @@
             echo strtr($str, $a);
         }
     }
-    name ();
+   name ("ПРИВетСТВУю, дАМЫ И ГОСПоДа!");
 ?>
 </body>
 </html>
